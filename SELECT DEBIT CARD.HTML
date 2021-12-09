@@ -1,0 +1,149 @@
+<html>
+
+<head>
+    
+    
+    <title>select debit card</title>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Monaco;
+}
+header{
+	background-image: url(train.jpg);
+	height: 100vh;
+	background-size: cover;
+}
+ul{
+	list-style: none;
+	float: right;
+	margin-top: 25px;
+	
+	
+}
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid #transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #808080;
+}
+ul li.power a{
+	background-color: #fff;
+	color: #808080;
+}
+.logo{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+.main{
+	max-width: 1550px;
+	margin: auto;
+}
+.heading{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.heading h1{
+	font-size: 50px;
+	
+
+} 
+
+</style>
+</head>
+
+<script language="javascript">
+    
+    function bank()
+    {
+        
+        if(document.getElements("boi").checked)
+            {
+                document.location.href="BANK OF BARODA";
+                
+            }
+        else
+            alert("enter only valid bank");
+    }
+    </script>
+<body >
+<header>
+    <form name="hello">
+    
+    <table width="100%" >
+       <div class="main">
+<IMG SRC="IMG HOME3.PNG" HEIGHT="150" WIDTH="150" >			
+		<ul>
+			<li class="power" ><a href="A HOME PAGE OF RAILWAY RESERVATION.HTML">HOME</a></li>
+			<li><a href="SELECT TRAINS.HTML">RESERVATION</a></li>
+			<li><a href="LOYALITY PROGRAMMES.HTML">PROGRAMMES</a></li>
+			<li><a href="ABOUT INDIAN RAILWAYS.HTML">ABOUT INDIAN RAILWAYS</a></li>
+			<li><a href="CONTACT US.HTML">CONTACT US</a></li>
+		</ul>
+	</div>
+        </table>
+                <CENTER>
+                <TABLE width="70%">
+                <tr>
+                <td align="center"><br><br><br>
+                
+                </TD>
+                </Tr>
+                <tr><td align="center">
+                <u><font color="black" size="5">PAYMENT OPTION(BY DEBIT CARD)</FONT></U>
+                
+                </TD></TR>
+                </table>
+                
+                </Table>
+                
+                </CENTER> <BR>
+                <CENTER>
+<TABLE WIDTH="70%" HEIGHT="40%" BORDER="2"BGCOLOR="SILVER">
+<TR>
+<TD BGCOLOR="SILVER">
+<INPUT TYPE="RADIO"NAME="R1" ID="AXIS"><FONT SIZE="4">AXIX BANK</FONT>
+</TD>
+<TD BG COLOR="SILVER">
+<INPUT TYPE="RADIO" NAME="R2" ID="SBI"><FONT SIZE="4">SBI ATM</FONT>
+</TD>
+</TR> <TR><TD BGCOLOR="SILVER">
+<INPUT TYPE="RADIO"NAME="R3"ID="ICICI"><FONT SIZE="4">ICICI BANK</FONT>
+</TD>
+<TD BGCOLOR="SILVER">
+<INPUT TYPE="RADIO"NAME="R4"ID="AB"><FONT SIZE="4">ANDHRA BANK</FONT>
+</TD>
+</TR>
+<TR>
+<TD BGCOLOR="SILVER">
+<INPUT TYPE="RADIO"NAME="R5"ID="BOI"><FONT SIZE="4">BANK OF BARODA</FONT>
+</TD>
+<TD BGCOLOR="SILVER"><INPUT TYPE="RADIO"NAME="R6"ID="UNI"><FONT SIZE="4">UNION BANK</FONT>
+</TR>
+</TABLE>
+</CENTER><BR>
+<CENTER><A HREF="BANK OF BARODA.HTML">
+<INPUT TYPE="BUTTON" VALUE="FILL FORM" STYLE="HEIGHT:40PX"onClick="bank();"></A>
+</CENTER>                
+                
+                
+                 
+    </form>
+    
+</header>    
+    </body>
+</html>

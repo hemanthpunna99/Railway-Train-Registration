@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Train Ticket Booking</title>
+</head>
+<SCRIPT language="javascript">
+
+function sub()
+ 
+{
+ if(form1.text1.value.length==0||form1.text2.value.length ==0||form1.text3.value.length==0)
+{
+ alert("Please fill all the mandatory fields");
+}
+else
+{
+ document.location.href="SELECT DEBIT CARD.HTML";
+}
+}
+</SCRIPT>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Monaco;
+}
+header{
+	background-image: url(train2.jpg);
+	height: 100vh;
+	background-size: cover;
+}
+ul{
+	list-style: none;
+	float: right;
+	margin-top: 25px;
+	
+	
+}
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid #transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #808080;
+}
+ul li.power a{
+	background-color: #fff;
+	color: #808080;
+}
+.logo{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+.main{
+	max-width: 1550px;
+	margin: auto;
+}
+.heading{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.heading h1{
+	font-size: 50px;
+	
+
+} 
+
+</style>
+<body bgcolor="grey">
+<header>
+<div class="main">
+<IMG SRC="IMG HOME3.PNG" HEIGHT="150" WIDTH="150" >			
+		<ul>
+			<li class="power" ><a href="A HOME PAGE OF RAILWAY RESERVATION.HTML">HOME</a></li>
+			<li><a href="SELECT TRAINS.HTML">RESERVATION</a></li>
+			<li><a href="LOYALITY PROGRAMMES.HTML">PROGRAMMES</a></li>
+			<li><a href="ABOUT INDIAN RAILWAYS.HTML">ABOUT INDIAN RAILWAYS</a></li>
+			<li><a href="CONTACT US.HTML">CONTACT US</a></li>
+		</ul>
+	</div>
+<h2 align="center">Please Enter the Passenger Details</h2>
+<br>
+<form>
+<TABLE  ALIGN="RIGHT"  WIDTH="90%" HEIGHT="75">
+<TR>
+<TD ALIGN="CENTER">
+<TABLE BGCOLOR="SILVER" BORDER="1" WIDTH="65%">
+<TR><TD ALIGN="CENTER">	
+<h3> Select the no. of Passengers: &nbsp                           
+<select id="passenger_count" oninput="displayPassengerDetails()">
+	<option> </option>
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+	<option>6</option>	
+</select>
+</h3>
+<br>
+<h4 id="label1"></h4>
+<br>
+<table id="passenger_table" border=0></table>
+<HR SIZE="5%">
+<CENTER>
+<TABLE>
+<TR>
+<TD>
+<INPUT TYPE="CHECKBOX"><FONT COLOR="GREEN">
+CONSIDER FOR AUTO UPGRADATION </FONT><BR>
+</TD>
+</TR>
+<TR>
+<TD COLSPAN="6">
+BERTH PREFERENCE DOES NOT FUARANTEE ALLOTMENT OF PREFERED BERTH TYPE. IF YOU NEED 
+ASSURED LOWER BERTH<BR>
+</TD>
+</TR>
+<TR>
+<TD COLSPAN="6">
+<INPUT TYPE="RADIO">NONE<BR>
+<INPUT TYPE ="RADIO">BOOK MY TICKET ONLY IF ATLEST ONE LOWER BERTH IS ALLOTED<BR>
+<INPUT TYPE="RADIO">BOOK MY TICKET ONLY IF ATLEAST TWO LOWER BERTHS ARE ALLOTED<BR>
+</TD>
+</TR>
+<TD>
+PASSENGER MOBILE NUMBER:+91<INPUT TYPE="TXT"  NAME="TEXT3"><FONT COLOR="RED">*</FONT>&nbsp&nbsp&nbsp(SMS WILL BE SENT TO THIS MOBILE NUMBER.)
+</TD>
+</TR>
+<TR BGCOLOR="#B0B0BO#>
+<TD ALIGN="CENTER">
+E-TICKET
+</TD>
+</TR>
+<TR>
+<TD>
+THE IDENTIFICATION DETAILS ARE REQUIRED AT THE TIME OF TATKAL TICKET BOOKING. THE ID CARD WILL ALSO BE REQUIRED DURING JOURNEY. ONE OF THE <BR>
+CARD/PASSOPORT/PANCARD/DRIVINGLICENSE/PHOTO<BR>
+ID CARD ISSUED BY CENTRAL/STATE GOVT WHICH ARE HAVING SERAIL NUMBER /STUDENT IDENTITY CARD WITH PHOTOGRAPH ISSUED BY RECOGNIZED SCHOOL OR<BR>
+COLLEGE FOR THEIR STUDENT /NATIONALLIZED BANK PASSBOOK WITH PHOTOGRAPH/CREDIT CARDS ISSUED BY BANKS WITH LAMINATED PHOTOGRAPH/UNIQUE<BR>
+IDENTIFICATION CARD "AADHAR")DURING TRAIN JOURNEY IN ORIGINAL. RATION CARD WILL BE ACCEPETED AS PROOF OF IDENTITY FOR UNDERTAKING JOURNEY<BR>
+UNDER TATKAL SCHEME ONLY IF THE PASSENGER WHOSE PHOTOGRAPH IS AVILABLE ON THE RATION CARD IS TRAVELLING.
+</TD>
+</TR>
+<TD ALIGN="RIGHT">
+<A HREF="SELECT DEBIT CARD.HTML">
+<INPUT TYPE="BUTTON" VALUE="SUBMIT" ONCLICK="SUB();"
+STYLE=WIDTH:70PX"/></A><A HREF="BOOK.HTML"><INPUT TYPE="BUTTON" VALUE="CANCEL"
+STYLE="WIDTH:70PX"></A.>
+</TD>
+</TR></TABLE>
+</CENTER>
+
+<HR SIZE="5%">
+
+
+<script>
+
+function deleteAllRows(table){
+	var parent=table;
+	while(parent.hasChildNodes()){
+		parent.removeChild(parent.firstChild);
+	}
+}
+function displayPassengerDetails(){
+	let passenger_count = document.getElementById("passenger_count").value;
+	document.getElementById("label1").innerHTML = "Passenger Details";
+
+	var table = document.getElementById("passenger_table");		
+	deleteAllRows(table);
+	for(let i=0;i<passenger_count;i++){
+		var row = table.insertRow(i);
+		var cell1 = row.insertCell(0);
+		var cell2 = row.insertCell(1);
+		var cell3 = row.insertCell(2);
+		var cell4 = row.insertCell(3);
+		var cell5 = row.insertCell(4);
+		var cell6 = row.insertCell(5);
+		var cell7 = row.insertCell(6);
+		
+		cell1.innerHTML=(i+1)+".";
+		cell2.innerHTML="Passenger Name";
+		
+		var name=document.createElement("input");
+		name.type="text";
+		name.id="name_"+(i+1);
+		cell3.appendChild(name);
+		
+		cell4.innerHTML="Age";
+		var age=document.createElement("input");
+		age.type="number";
+		age.id="age_"+(i+1);
+		cell5.appendChild(age);
+		cell6.innerHTML="Gender";
+		
+		var gender1 = document.createElement("input");
+		
+		gender1.type="radio";
+		
+		gender1.name="gender_"+(i+1);
+		gender1.id="gender_"+(i+1);
+		cell7.appendChild(gender1);
+		
+		var male_label1 = document.createElement("label");
+		male_label1.innerHTML="Male";		
+		cell7.appendChild(male_label1);
+		
+		var gender2 = document.createElement("input");
+		gender2.type="radio";
+		gender2.id="gender_"+(i+1);
+		gender2.name="gender_"+(i+1);
+		cell7.appendChild(gender2);
+		var female_label1 = document.createElement("label");
+		female_label1.innerHTML="Female";		
+		cell7.appendChild(female_label1);
+
+		var gender3 = document.createElement("input");
+		gender3.type="radio";
+		gender3.id="gender_"+(i+1);
+		gender3.name="gender_"+(i+1);		
+		cell7.appendChild(gender3);
+		var others_label1 = document.createElement("label");
+		others_label1.innerHTML="Others";		
+		cell7.appendChild(others_label1);
+		
+	}	
+}
+</script>
+</form>
+</header>
+</TD>
+</TR>
+</TABLE>
+</body>
+</html>

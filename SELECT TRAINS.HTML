@@ -1,0 +1,232 @@
+<HTML>
+<HEAD>
+<TITLE>LIST OF TRAINS</TITLE>
+<script language="javascript">
+function book()
+{
+if(login.user.value=="14236")
+{       
+document.location.href="BOOK.HTML";
+}
+else
+            
+alert("Please enter valid TRAIN NUMBER");   
+}   
+	
+</script>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Monaco;
+}
+header{
+	background-image: url(train.jpg);
+	height: 100vh;
+	background-size: cover;
+}
+ul{
+	list-style: none;
+	float: right;
+	margin-top: 25px;
+	
+	
+}
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid #transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #808080;
+}
+ul li.power a{
+	background-color: #fff;
+	color: #808080;
+}
+.logo{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+.main{
+	max-width: 1550px;
+	margin: auto;
+}
+.heading{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.heading h1{
+	font-size: 50px;
+	
+
+} 
+
+</style>
+</HEAD>
+<header>
+<FORM NAME"LOGIN">
+<BODY BGCOLOR="SILVER">
+<TABLE WIDTH="100%"BORDER="1">
+<TR>
+<div class="main">
+<IMG SRC="IMG HOME3.PNG" HEIGHT="150" WIDTH="150" >			
+		<ul>
+			<li class="power" ><a href="A HOME PAGE OF RAILWAY RESERVATION.HTML">HOME</a></li>
+			<li><a href="SELECT TRAINS.HTML">RESERVATION</a></li>
+			<li><a href="LOYALITY PROGRAMMES.HTML">PROGRAMMES</a></li>
+			<li><a href="ABOUT INDIAN RAILWAYS.HTML">ABOUT INDIAN RAILWAYS</a></li>
+			<li><a href="CONTACT US.HTML">CONTACT US</a></li>
+		</ul>
+	</div>
+<TD ALIGN="CENTER">
+<BR>
+<CENTER>
+<TABLE BGCOLOR="SILVER" WIDTH="70%"BORDER="1">
+<TR BGCOLOR="SILVER">
+<FONT COLOR="BLACK" SIZE="5"><U><FONT>LIST OF TRAINS</FONT></U>
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+<B>TRAIN NAME / TRAIN NUMBER</B>
+</TD>
+<TD ALIGN="CENTER">
+<B>SOURCE</B>
+</TD>
+<TD ALIGN="CENTER">
+<B>DESTINATION</B>
+</TD>
+<TD ALIGN="CENTER">
+<B>TICKET PRICE</B>
+</TD>
+</TR>
+<TR> 
+<TD ALIGN="CENTER">
+1001 / SHATABDI EXPRESS
+</TD>
+<TD ALIGN="CENTER">
+BANGALORE
+</TD>
+<TD ALIGN="CENTER">
+DELHI
+</TD>
+<TD ALIGN="CENTER">
+2,500 /-
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+1002 /  SHATABDI EXPRESS
+</TD>
+<TD ALIGN="CENTER">
+DELHI
+</TD>
+<TD ALIGN="CENTER">
+BANGALORE
+</TD>
+<TD ALIGN="CENTER">
+2,500 /-
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+1003 / UDYAN EXPRESS
+</TD>
+<TD ALIGN="CENTER">
+BANGALORE
+</TD>
+<TD ALIGN="CENTER">
+MUMBAI
+</TD>
+<TD ALIGN="CENTER">
+1,500 /-
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+1004 / UDYAN EXPRESS
+</TD>
+<TD ALIGN="CENTER">
+MUMBAI
+</TD>
+<TD ALIGN="CENTER">
+BANGALORE
+</TD>
+<TD ALIGN="CENTER">
+1,500 /-
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+1005 / BRINDAVAN EXPRESS
+</TD>
+<TD ALIGN="CENTER">
+BANGALORE
+</TD>
+<TD ALIGN="CENTER">
+CHENNAI
+</TD>
+<TD ALIGN="CENTER">
+1,000 /-
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+1006 / BRINDAVAN EXPRESS
+</TD>
+<TD ALIGN="CENTER">
+CHENNAI
+</TD>
+<TD ALIGN="CENTER">
+BANGALORE
+</TD>
+<TD ALIGN="CENTER">
+1,000 /-
+</TD>
+</TR>
+<TD ALIGN="CENTER">
+ENTER TRAIN NUMBER 
+</TD>
+<TD COLSPAN="3">
+<INPUT TYPE="TEXT" NAME="USER">
+</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">
+SELECT COACH TYPE
+</TD>
+<TD COLSPAN="3">
+
+<SELECT>
+<OPTION>SLEEPER</OPTION>
+<OPTION>FIRST AC</OPTION>
+<OPTION>SECOND AC</OPTION>
+<OPTION>CHAIR CAR AC</OPTION>
+<OPTION>THIRD AC</OPTION>
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD COLSPAN="4" ALIGN="CENTER">
+<A HREF="BOOK.HTML">
+
+<INPUT TYPE="BUTTON" VALUE="BOOK NOW" onClick="book();" STYLE="HEIGHT:30PX"></A>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</header>
+</BODY>
+</HTML>

@@ -1,0 +1,164 @@
+<HTML>
+<HEAD>
+    <TITLE>BANK OF BARODA</TITLE>
+    <script language="javascript">
+    function sub()
+        {
+            if document.form1.r1.checked==false>
+                {
+                alert("please select the card detail options");
+                
+                
+            }
+            else if(form1.text1.value.length==0||form1.text2.value.length==0||form1.text3.vlaue.length==0||form1.text4.value.length==0)
+                {
+                    alert("please fill all mandotary fields");
+                    
+                    
+                }
+                else{
+                    
+                    document.location.href="RESERVATION COMPLETED.HTML";
+                    
+                }        
+            
+        }
+    
+    
+    </script>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Monaco;
+}
+header{
+	background-image: url(train.jpg);
+	height: 100vh;
+	background-size: cover;
+}
+ul{
+	list-style: none;
+	float: right;
+	margin-top: 25px;
+	
+	
+}
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid #transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #808080;
+}
+ul li.power a{
+	background-color: #fff;
+	color: #808080;
+}
+.logo{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+.main{
+	max-width: 1550px;
+	margin: auto;
+}
+.heading{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.heading h1{
+	font-size: 50px;
+	
+
+} 
+
+</style>
+    </HEAD>
+<BODY BGCOLOR="SILVER">
+<header>
+    
+    <TABLE WIDTH="100%" >
+ <div class="main">
+<IMG SRC="IMG HOME3.PNG" HEIGHT="150" WIDTH="150" >			
+		<ul>
+			<li class="power" ><a href="A HOME PAGE OF RAILWAY RESERVATION.HTML">HOME</a></li>
+			<li><a href="SELECT TRAINS.HTML">RESERVATION</a></li>
+			<li><a href="LOYALITY PROGRAMMES.HTML">PROGRAMMES</a></li>
+			<li><a href="ABOUT INDIAN RAILWAYS.HTML">ABOUT INDIAN RAILWAYS</a></li>
+			<li><a href="CONTACT US.HTML">CONTACT US</a></li>
+		</ul>
+	</div>
+    </TABLE>
+    <CENTER>
+    <IMG SRC="BOB.jpg" WIDTH="30%" HEIGHT="30%">
+    </CENTER><CENTER>
+<TABLE  ALIGN="CENTER"  WIDTH="90%" HEIGHT="75">
+<TR>
+<TD ALIGN="CENTER">
+<TABLE BGCOLOR="SILVER" BORDER="1" WIDTH="65%">
+<TR><TD ALIGN="CENTER">	
+            <TABLE BGCOLOR="GREY">
+            
+            <TR>
+                <TD>
+                <FONT SIZE="4" COLOR="ORANGE"><U>WELCOME TO BANK OF BARODA PAYMENT GATEWAY</U></FONT>
+                </TD>
+                </TR>
+                
+                
+                
+            </TABLE>
+            </CENTER>
+        <BR>
+             <CENTER> 
+                <TABLE WIDTH="50%">
+              <TR>
+                    <TD BGCOLOR="GREY" ALIGN="CENTER" COLSPAN="2">
+                    BILLING INFORMATION
+                    
+                    </TD>
+                    </TR></CENTER>
+                <TR>
+                    <TD>
+                    <B>MERCHANT</B>
+                    </TD><TD>EST.90</TD></TR>
+                 <TR><TD><B>Website</B></TD><td>http.//www.est90.co.in</td></TR>
+                 <tr><td><b>Track id</b></td><td>02476935821548</td></tr>
+                 <tr> <td bgcolor="grey"align="center"colspan="2">PAYMENT INFORMATION</td></tr>
+                 <TR><td colspan="2"><input type="radio" name="r1"><u>CARD DETAILS</u></td></TR>
+                 <TR><td>Card Number<font color="red">*</font></td><td><input type="text"name="text1"></td></TR>
+                 <tr><td>Valid from/Expiration Date<font color="red">*</font><td><input type="text"name="text2"></td></td></tr>
+                 
+                 <tr><td>Card Holder Name<font color="red">*</font><td><input type="text"name="text2"></td></td></tr>
+                 <tr><td>PIN<font color="red">*</font><td><input type="text"name="text2"></td></td></tr>
+                   <center><tr><td align="center"colspan="3"><u><b>NOTE</b></u><font color="red">*</font> All fields are mandatory</td></tr></center>
+</TD>
+</TR>
+                                       
+    </TABLE>
+        </CENTER>
+<hr size="2%">
+<center>
+<table>
+    <tr>
+    
+        <td colspan="3"><A HREF="CAUTION.HTML"><input type="button"value="SUBMIT"style="height:40px"onClick="sub();"/></td></A><td><a href=BANK%20OF%20BARODA.HTML><input type="button"value="CANCEL"style="height:40px"></a></td></tr>
+    </table>
+</center>
+</form>
+</header>
+    </BODY>
+</HTML>
